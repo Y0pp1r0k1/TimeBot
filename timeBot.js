@@ -25,6 +25,8 @@ nightSetTime.setHours(23);
 nightSetTime.setMinutes(59);
 nightSetTime.setSeconds(59);
 
+//深夜の時間設定
+//現在の日時　+　午前5時59分59秒
 let midnightSetTime = new Date();
 midnightSetTime.setHours(5);
 midnightSetTime.setMinutes(59);
