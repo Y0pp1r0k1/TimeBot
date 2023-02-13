@@ -33,19 +33,20 @@ midnightSetTime.setMinutes(59);
 midnightSetTime.setSeconds(59);
 
 //時間によって返答が変わる表示の処理
-if (now < morningSetTime) {
-    document.write("おはようございます");
-} else if (now < noonSetTime) {
-    document.write("こんにちは");
-} else if (now < nightSetTime) {
-    document.write("こんばんは")
-} else if (now < midnightSetTime) {
-    document.write("今深夜ですよ⁉何してるんですか早く寝てください!!");
+let TimeBodCode = function() {
+    if (now < morningSetTime) {
+        document.write("おはようございます");
+    } else if (now < noonSetTime) {
+        document.write("こんにちは");
+    } else if (now < nightSetTime) {
+        document.write("こんばんは")
+    } else if (now < midnightSetTime) {
+        document.write("今深夜ですよ⁉何してるんですか早く寝てください!!");
+    }
+    
 }
-
-
-
 
 
 //実行場所
 console.log(now);
+TimeBodCode();
