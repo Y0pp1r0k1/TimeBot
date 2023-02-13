@@ -33,7 +33,8 @@ midnightSetTime.setMinutes(59);
 midnightSetTime.setSeconds(59);
 
 //時間によって返答が変わる表示の処理
-let TimeBodCode = function() {
+let TimeBotCode = function() {
+
     if (now < morningSetTime) {
         document.write("おはようございます");
     } else if (now < noonSetTime) {
@@ -43,10 +44,10 @@ let TimeBodCode = function() {
     } else if (now < midnightSetTime) {
         document.write("今深夜ですよ⁉何してるんですか早く寝てください!!");
     }
-    
+
 }
 
 
 //実行場所
 console.log(now);
-TimeBodCode();
+  TimeBotCode();
