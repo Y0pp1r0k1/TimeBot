@@ -46,6 +46,4 @@ if (now < morningSetTime) {
 
 
 //実行場所
-console.log(morningSetTime);
-console.log(noonSetTime);
-console.log(nightSetTime);
+console.log(now);
