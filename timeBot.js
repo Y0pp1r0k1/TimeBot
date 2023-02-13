@@ -25,6 +25,11 @@ nightSetTime.setHours(23);
 nightSetTime.setMinutes(59);
 nightSetTime.setSeconds(59);
 
+let midnightSetTime = new Date();
+midnightSetTime.setHours(5);
+midnightSetTime.setMinutes(59);
+midnightSetTime.setSeconds(59);
+
 //時間によって返答が変わる表示の処理
 if (now < morningSetTime) {
     document.write("おはようございます");
@@ -32,6 +37,8 @@ if (now < morningSetTime) {
     document.write("こんにちは");
 } else if (now < nightSetTime) {
     document.write("こんばんは")
+} else if (now < midnightSetTime) {
+    document.write("今深夜ですよ⁉何してるんですか早く寝てください!!");
 }
 
 
