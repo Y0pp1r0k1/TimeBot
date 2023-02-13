@@ -1,15 +1,12 @@
 //現在時刻の設定
 let now = new Date();
-let hour = now.getHours();
-let min = now.getMinutes();
-let sec = now.getSeconds();
 
 //朝の時間設定
 //現在の日時 +　午前11時59分59秒
 let morningSetTime = new Date();
-morningSetTime.setHours(11);
-morningSetTime.setMinutes(59);
-morningSetTime.setSeconds(59);
+morningSetTime.setHours(11);          //何時
+morningSetTime.setMinutes(59);        //何分
+morningSetTime.setSeconds(59);        //何秒
 
 //昼の時間設定
 //現在の日時　+　午後5時59分59秒
@@ -33,7 +30,7 @@ midnightSetTime.setMinutes(59);
 midnightSetTime.setSeconds(59);
 
 //時間によって返答が変わる表示の処理
-let TimeBotCode = function() {
+let TimeBotCode = function () {
 
     if (now < morningSetTime) {
         document.write("おはようございます");
@@ -44,10 +41,14 @@ let TimeBotCode = function() {
     } else if (now < midnightSetTime) {
         document.write("今深夜ですよ⁉何してるんですか早く寝てください!!");
     }
+    
 
 }
+
+//TimeBot(HTML)への介入
+let TimeBot = document.getElementById('TimeBot');
 
 
 //実行場所
 console.log(now);
-  TimeBotCode();
+TimeBot.innerHTML = TimeBotCode();
