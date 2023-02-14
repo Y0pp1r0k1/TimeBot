@@ -45,10 +45,7 @@ let TimeBotCode = function () {
 
 }
 
-//TimeBot(HTML)への介入
-let TimeBot = document.getElementById('TimeBot');
-
 
 //実行場所
 console.log(now);
-TimeBot.innerHTML = TimeBotCode();
+TimeBotCode();
