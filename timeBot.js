@@ -45,6 +45,8 @@ let TimeBotCode = function () {
 
 }
 
+//公開場所
+module.exports = { morningSetTime, noonSetTime, nightSetTime, midnightSetTime };
 
 //実行場所
 console.log(now);
