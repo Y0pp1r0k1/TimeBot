@@ -1,5 +1,3 @@
-const { morningSetTime, noonSetTime, nightSetTime, midnightSetTime } = require("./timeBot");
-
 //朝に表示される言葉の変数の作成
 let morningDialogues = [
     "朝ご飯は食べましたか？今日1日は今から始まるですよ‼ちゃんと朝ご飯を食べて、力をつけておきましょう。",
@@ -19,7 +17,7 @@ let noonDialogues = [
 //夜に表示される言葉の関数制作
 let nightDialogues = [
     "あぁもう1日が終わっちゃいますね。もうこんな時間なんだし、ささっとやることすまして寝ましょう!楽しい明日が待っています。",
-    "",
+    "夜だ！夜だ！夜だ！やっと夜になった。これから好きな配信者が配信をするんですよ。え⁉あなたも好きなんですか!?じゃあ、一緒に見ましょう!!",
     "",
     ""
 ];
@@ -32,26 +30,21 @@ let midnightDialogues = [
     "",
 ];
 
-//朝の時ランダムで表示される言葉の関数（朝）
-function  morningRandom() {
-    
-}
+//朝の時ランダムで表示される言葉の変数（朝）
+const morningRandom = Math.floor( Math.random() * morningDialogues.length ); 
 
 //昼
-function noonRandom() {
-
-}
+const noonRandom = Math.floor( Math.random() * noonDialogues.length );
 
 
 //夜
-function nightRandom() {
-
-}
-
+const nightRandom = Math.floor( Math.random() * nightDialogues.length );
 
 //深夜
-function midnightRandom() {
+const midnightRandom = Math.floor( Math.random() * midnightDialogues );
 
-}
+//エラー時に表示されるメッセージの変数
+const errormessage = ('エラーが発生しました。再読み込み、またはブラウザを再起動してください');
 
+//時間によって表示が変わるメッセージのIf文
 //実行場所
