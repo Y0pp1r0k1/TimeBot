@@ -43,8 +43,6 @@ let TimeBotCode = function () {
     }
 }
 
-//共有場所`
-
 //実行場所
 console.log(now);
 TimeBotCode();
