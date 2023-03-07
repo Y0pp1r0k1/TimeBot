@@ -44,5 +44,4 @@ let TimeBotCode = function () {
 }
 
 //実行場所
-console.log(now);
 TimeBotCode();
