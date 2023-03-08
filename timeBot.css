@@ -18,9 +18,18 @@ a:hover {
     text-decoration: underline;
 }
 
+script {
+    margin: 50px;
+}
+
+.source {
+    padding-top: 80px;
+}
+
 .timeBot {
     text-align: center;
 }
+
 
 .footer {
     background-color: darkgray;
