@@ -52,15 +52,25 @@ const ErrorMessage = ('エラーが発生しました。再読み込み、また
 function TimeMessage() {
 
     if (now < morningSetTime) {
+
         document.write(morningDialogues[morningRandom]);
+
     } else if (now < noonSetTime) {
+
         document.write(noonDialogues[noonRandom]);
+
     } else if (now < nightSetTime) {
+
         document.write(nightDialogues[nightRandom]);
+
     } else if (now < midnightSetTime) {
+
         document.write(midnightDialogues[midnightRandom]);
+
     } else {
+
         document.write(ErrorMessage);
+        
     }
 }
 

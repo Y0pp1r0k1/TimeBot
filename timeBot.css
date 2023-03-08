@@ -1,5 +1,5 @@
 body {
-    background-color: darkgreen;
+    background-color: forestgreen;
     font-family: serif;
     font-size: 20px;
 }
@@ -22,8 +22,9 @@ script {
     margin: 50px;
 }
 
-.source {
-    padding-top: 80px;
+.mainTitle {
+    background-color: darkcyan;
+    padding: 20px;
 }
 
 .timeBot {
@@ -32,7 +33,7 @@ script {
 
 
 .footer {
-    background-color: darkgray;
+    background-color: darkslategrey;
     margin-top: 150px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -45,22 +46,22 @@ script {
     font-size: 15px;
 }
 
-.footertopics {
-    background-color: darkgray;
+.Createname {
+    padding-left: 30px;
 }
-
-.use {
-    text-align: right;
-}
-
+ 
 .use h4 {
     font-size: 15px;
 }
 
-.useTopics {
-    text-align: right;
+.use p {
+    padding-left: 30px;
 }
 
 .useTopics h4 {
     font-size: 15px;
+}
+
+.useTopics p {
+    padding-left: 30px;
 }
