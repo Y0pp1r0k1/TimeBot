@@ -33,7 +33,8 @@ let midnightDialogues = [
 ];
 
 //朝の時ランダムで表示される言葉の変数（朝）
-//ランダムに表示させるには（配列の変数[Math関数を使っている変数]）この表に記述する。
+//ランダムに表示させるには（配列の変数[Math関数を使っている変数]）このように記述する。
+
 const morningRandom = Math.floor( Math.random() * morningDialogues.length ); 
 
 //昼
@@ -49,6 +50,7 @@ const midnightRandom = Math.floor( Math.random() * midnightDialogues );
 const ErrorMessage = ('エラーが発生しました。再読み込み、またはブラウザを再起動してください');
 
 //時間によって表示が変わるメッセージのIf文
+
 function TimeMessage() {
 
     if (now < morningSetTime) {
